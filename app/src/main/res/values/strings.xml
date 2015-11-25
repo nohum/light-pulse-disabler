@@ -1,0 +1,4 @@
+<resources>
+    <string name="app_name">Light Pulse Disabler</string>
+    <string name="title_activity_install">InstallActivity</string>
+</resources>
