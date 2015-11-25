@@ -37,6 +37,7 @@ public class NotificationService extends NotificationListenerService {
 
         Log.i(TAG, alarmOnly ? "alarm only filter is set" : "alarm only filter is NOT set");
         Settings.System.putInt(getContentResolver(), NOTIFICATION_LIGHT_PULSE, alarmOnly ? 0 : 1);
-        Settings.System.putInt(getContentResolver(), WAKE_GESTURE_ENABLED, alarmOnly ? 0 : 1);
+        // TODO has no effect as of now (to be investigated)
+//        Settings.System.putInt(getContentResolver(), WAKE_GESTURE_ENABLED, alarmOnly ? 0 : 1);
     }
 }
